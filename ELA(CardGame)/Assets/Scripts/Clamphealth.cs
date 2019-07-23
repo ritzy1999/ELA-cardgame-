@@ -5,22 +5,37 @@ using UnityEngine.UI;
 
 public class Clamphealth : MonoBehaviour
 {
-    public Slider hp;
-    private Vector3 offset,cardpos;
+    public GameObject card;
+    public static Clamphealth ch;
+    public Text hp;
+    public Text attack;
+    public Text resistance;
+    private Vector3 offset1,offset2,offset3,cardpos;
     void Start()
     {
-        cardpos = this.transform.position;
-        offset = hp.transform.position - Camera.main.WorldToScreenPoint(this.transform.position);
+        ch = this;
+        cardpos = card.transform.position;
+        offset1 = hp.transform.position - Camera.main.WorldToScreenPoint(card.transform.position);
+        offset2 = attack.transform.position - Camera.main.WorldToScreenPoint(card.transform.position);
+        offset3 = resistance.transform.position - Camera.main.WorldToScreenPoint(card.transform.position);
     }
     
     void Update()
     {
-        Vector3 namePos = Camera.main.WorldToScreenPoint(this.transform.position);
-        hp.transform.position = namePos + offset;
+        Vector3 namePos = Camera.main.WorldToScreenPoint(card.transform.position);
+        hp.transform.position = namePos + offset1;
+        attack.transform.position = namePos + offset2;
+        resistance.transform.position = namePos + offset3;
+        
+        if (DragAndDrop.drag._mouseState == false)
+        {
+            if(P1.col1.p1collided == false)
+                card.transform.position = cardpos;
+        }
     }
 
     public void Resetpos()
     {
-        this.transform.position = cardpos;
+        card.transform.position = cardpos;
     }
 }

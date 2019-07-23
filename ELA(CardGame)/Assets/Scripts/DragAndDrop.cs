@@ -3,14 +3,15 @@ using System.Collections;
 
 public class DragAndDrop : MonoBehaviour
 {
-    private bool _mouseState;
-    private GameObject target, last_target;
+    public static DragAndDrop drag;
+    public bool _mouseState;
+    public GameObject target;
     public Vector3 screenSpace;
     public Vector3 offset;
     
     void Start()
     {
-
+        drag = this;
     }
     
     void Update()
@@ -34,11 +35,19 @@ public class DragAndDrop : MonoBehaviour
         }
         if (_mouseState && target.tag != "Borders")
         {
-            var curScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);
+            if (target.tag == "p1" && P1.col1.p1collided == false) 
+            {
+                var curScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);
+                var curPosition = Camera.main.ScreenToWorldPoint(curScreenSpace) + offset;
+                target.transform.position = curPosition;
+            }
+            if (target.tag == "p2" && P2.col2.p2collided == false)
+            {
+                var curScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);
+                var curPosition = Camera.main.ScreenToWorldPoint(curScreenSpace) + offset;
+                target.transform.position = curPosition;
+            }
             
-            var curPosition = Camera.main.ScreenToWorldPoint(curScreenSpace) + offset;
-            
-            target.transform.position = curPosition;
         }
     }
 

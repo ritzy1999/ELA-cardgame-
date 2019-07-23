@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 917, y: 422}
-  m_MaxSize: {x: 22012, y: 10022}
+  m_MinSize: {x: 911, y: 422}
+  m_MaxSize: {x: 22006, y: 10022}
   vertical: 0
-  controlID: 12286
+  controlID: 69406
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 422}
   m_MaxSize: {x: 4002, y: 8022}
   vertical: 1
-  controlID: 12287
+  controlID: 69407
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -384,14 +384,14 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.782789, y: -3.33873, z: 15.591189}
+    m_Target: {x: -1.324759, y: 1.1208189, z: -10.519543}
     speed: 2
-    m_Value: {x: -1.782789, y: -3.33873, z: 15.591189}
+    m_Value: {x: -1.9996479, y: 1.4304214, z: -10.463243}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -412,25 +412,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.048279118, y: -0.009888112, z: 0.0004781115, w: 0.99878824}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.04828062, y: -0.0053934613, z: 0.0002608505, w: 0.9988193}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 52.9221
+    m_Target: 14.937748
     speed: 2
-    m_Value: 50.643158
+    m_Value: 15.641621
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -444,7 +444,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.00090463477, y: -0.9973328, z: 0.07224277, w: 0.012572444}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -480,9 +480,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ae270000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8ef7ffff9a3600004a3700009a370000d4370000
+      m_SelectedIDs: aa2c0000
+      m_LastClickedID: 11434
+      m_ExpandedIDs: aa6affff0c6bffff6e6bffffd06bffff6481ffff8883ffff8ae2ffff26e4ffff7cfbffff782b0000902b0000a62b0000ba2b0000e62b0000062c0000682c0000802c00009c2c0000aa2c0000d82c00002a2d0000422d0000602d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -550,14 +550,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ritik\OneDrive\Documents\ELA(CardGame)
+  m_LastProjectPath: C:\Users\ritik\OneDrive\Documents\GitHub\ELA-cardgame-\ELA(CardGame)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 56350000
-    m_LastClickedID: 13654
-    m_ExpandedIDs: 000000006634000000ca9a3b
+    m_SelectedIDs: 1c2a0000
+    m_LastClickedID: 10780
+    m_ExpandedIDs: 000000000229000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,7 +573,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -585,7 +585,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006634000000ca9a3b
+    m_ExpandedIDs: 000000000229000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -637,7 +637,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 71}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 112
 --- !u!114 &16
